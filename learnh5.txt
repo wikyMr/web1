@@ -1,0 +1,99 @@
+<html>...</..>---网页开头
+<head>...</..>---头部信息
+<title>...</..>...</..>---网页标题
+<body>...</..>---网页内容
+<span>...</..>---为文字设置单独样式
+<q>...</..>-----短文本引用，自动添加引号
+<blockquote>...</..>-----长文本引用，自动添加引号
+<br>----回车
+&nbsp---空格
+<hr \>----水平横线，分割线
+<address>...</..>---地址信息
+<code>...</..>---单行代码
+<pre>...</..>---多行代码
+<ul>-<li>...</..>...</..>---没有前后信息的列表
+<ol>-<li>...</..>...</..>---有序列表
+<div>...</..>---网页划分独立模块，可以指定id=""属性值
+
+表格：
+创建表格的是个元素：<table><tbody><tr><th><td>
+<table>...</..>---整张表格
+<tbody>...</..>---表格内容全部下载完成才显示
+<tr>...</..>----表格的一行
+<td>....</...>----表格的一个单元格
+<th>...</..>-----表格表头的一个单元格
+表格默认没有表格线，css可以设置；
+<table summary="表格简介文本">，不显示
+summary属性不显示
+<caption>...</..>---表格标题
+
+超链接：
+<a>...</a>超链接
+href=".."---设置超链接地址
+title=".."---鼠标滑过显示的内容
+target="_blank"---新窗口打开页面
+
+邮件：
+<a href="mailto:yy@imooc.com?subject="观了不起的盖茨比有感"&body="你好，对此评论有些想
+法。">对此影评有何感想，发送邮件给我</a>
+格式：第一个参数必须以“?”开头，后面的参数每一个都以“&”分隔。
+href="mailto:邮箱地址?cc:抄送地址&bcc:密件抄送地址&subject="主题"&body="内容""
+
+图片：
+<img  src="图片地址" title="鼠标滑过显示的内容" alt="加载失败显示的内容"/>
+
+表单：
+<form>...<../> 表单
+<input.../>文本输入框，
+type="text"--指定为文本输入框；type="password"--指定为密码输入框 
+type="submit"--提交  ； type="reset"--重置
+type="radio" ---单选框 ；type="checkbox" --多选框
+eg：
+<form method="post" action="save.php">
+      <label for="username">用户名:</label>
+      <input type="text"  name="username" id="username" value="" />
+      <br />
+      <label for="pass">密码:</label>
+      <input type="password"  name="pass" id="pass" value="" />    
+      <input type="submit" value="确定"  name="submit" />
+      <input type="reset" value="重置" name="reset" />
+</form>  
+
+
+多行文本域：
+<textarea cols="列数" rows="行数">...</...>----多行文本域
+
+
+单选多选框：
+<input type="radio" value="值" name="名称" checked="checked"/>
+<input.../>文本输入框，
+属性和值：
+type="radio" ---单选框 ；type="checkbox" --多选框
+checked="checked"---选项被默认选中
+value:提交数据到服务器的值
+name:控件命名，同一组单选框的命名需保持一致
+
+下拉列表：
+<form action="save.php method="post">
+   <label>爱好：</label>
+   <select>
+    <option value="1">看书</option>
+    <option value="2" selected="selected">旅行</option>
+    <option value="3">跑步</option>
+   </select>
+ </form>
+
+<option value="1">看书</option>
+value="1"----向服务器提交的值
+selected="selected"----默认选中项
+
+多选下拉列表：
+<select multiple="multiple">
+
+ 提交数据：
+<input type="submit" value="提交">
+type="submit"时，按钮才有提交作用
+
+ 重置数据：
+<input type="reset" value="重置">
+type="reset"时，按钮才有重置作用

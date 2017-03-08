@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>问卷调查</title>
+    <style type="text/css">
+        label{
+            font-size: 25px;
+            color: #0000
+            font-weight:bold;
+        }
+        span{
+            color:red;
+        }
+    </style>
+</head>
+<body>
+    <h1>做个简单的问卷调查</h1>
+    <p>   这里简单的为大家做一个调查的页面，<span>有兴趣的同学</span>可以填写一下。</p>
+    <hr>
+    <form action="" method=" ">
+    <label>姓名：</label>
+    <input type="text" name="name" />
+    <br>
+    <label>性别：</label>
+    <input type="radio" name="sex" value="1"/>男
+    <input type="radio" name="sex" value="2"/>女
+    <br>
+    <label>学习的科目：</label>
+    <select multiple="multiple">
+    	<option selected="selected">语文</option>
+    	<option>数学</option>
+    	<option>英语</option>
+    </select>
+    <br>
+    <label>运动：</label>
+    <input type="checkbox" name="subject" value="1"/>篮球
+    <input type="checkbox" name="subject" value="2"/>足球
+     <input type="checkbox" name="subject" value="3"/>乒乓球
+     <br>
+     <label>学校：</label>
+    <select>
+    	<option >中大</option>
+    	<option>华工</option>
+    	<option selected="selected">深大</option>
+    </select>
+    <br>
+    <label>自我介绍：</label>
+    <textarea cols="50" rows="10"></textarea>
+    <br>
+     <label>微信：</label>
+     <input type="text" name="wechat">
+     <br>
+     <label>密码：</label>
+    <input type="password" name="password">
+    <br>
+     <input type="submit" name="submit" value=" 提交 ">
+    </form>
+</body>
+</html>
